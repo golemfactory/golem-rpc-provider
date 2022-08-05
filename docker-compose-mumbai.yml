@@ -7,7 +7,7 @@ services:
       - "15600:15600"
       - "15500:15500"
     environment:
-      - SUBNET=bor_proxy_subnet
+      - SUBNET=mumbai_proxy_subnet
       - NETWORK=rinkeby
       - NODE_NAME=MumbaiNodeTemp1
       - HTTPS_PORT=15600
