@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  mumbai_provider_1:
+    build: golem_service_provider
+    user: root
+    ports:
+      - "15600:15600"
+      - "15500:15500"
+    environment:
+      - SUBNET=bor_proxy_subnet
+      - NETWORK=rinkeby
+      - NODE_NAME=MumbaiNodeTemp1
+      - HTTPS_PORT=15600
+      - HTTP_PORT=15500
+      - SERVER_NAME=54.38.192.207
+      - TARGET_PROXY=http://127.0.0.1:8545
+      - MAX_AGREEMENTS=5
+      - YA_ACCOUNT=0x711fd18a58B25bD3b76FFFD6E1B9595894bc4EaB
+      - SERVICE_NAME=mumbai_service
+      - SERVICE_DESCRIPTION=Mumbai service
+      
