@@ -1,0 +1,20 @@
+[
+  {
+    "name": "bor-service",
+    "version": "0.1.0",
+    "supervisor-path": "exe-unit",
+    "runtime-path": "ya-runtime-bor/ya-runtime-http-auth",
+    "description": "HTTP auth runtime",
+    "extra-args": ["--runtime-managed-image",
+	   "--runtime-arg", "bor-service"],
+	"config": {
+    	"counters": {
+    	  "http-auth.requests": {
+            "name": "requests",
+            "description": "Total number of HTTP requests",
+            "price": true
+    	  }
+    	}
+    }
+  }
+]

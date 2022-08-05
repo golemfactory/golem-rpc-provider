@@ -1,0 +1,13 @@
+{
+  "name": "%%SERVICE_NAME%%",
+  "description": "%%SERVICE_DESCRIPTION%%",
+  "serverName": ["%%SERVER_NAME%%", "127.0.0.1"],
+  "bindHttps": "0.0.0.0:%%HTTPS_PORT%%",
+  "bindHttp": "0.0.0.0:%%HTTP_PORT%%",
+  "from": "/",
+  "to": "%%TARGET_PROXY%%",
+  "cert": {
+    "path": "/privatecerts/server.cert",
+    "keyPath": "/privatecerts/server.key"
+  }
+}

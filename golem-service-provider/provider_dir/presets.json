@@ -1,0 +1,19 @@
+{
+  "ver": "V1",
+  "active": [
+	"bor"
+  ],
+  "presets": [
+    {
+      "name": "bor",
+      "exeunit-name": "bor-service",
+      "pricing-model": "linear",
+      "initial-price": 0.0,
+      "usage-coeffs": {
+        "golem.usage.cpu_sec": 0.0,
+        "golem.usage.duration_sec": 0.0,
+		"http-auth.requests": 0.00001
+      }
+    }
+  ]
+}
