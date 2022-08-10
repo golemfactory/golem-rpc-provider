@@ -6,10 +6,10 @@ services:
     environment:
       - SUBNET=mumbai_proxy_subnet
       - NETWORK=rinkeby
-      - NODE_NAME=MumbaiNodeTemp1
+      - NODE_NAME=MumbaiNodeMain1
       - HTTPS_PORT=15600
       - HTTP_PORT=15500
-      - SERVER_NAME=54.38.192.207
+      - SERVER_NAME=54.36.174.74
       - TARGET_PROXY=http://127.0.0.1:8545
       - MAX_AGREEMENTS=5
       - SERVICE_NAME=bor-service
