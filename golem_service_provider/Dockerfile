@@ -3,7 +3,7 @@ RUN apt-get update
 RUN apt-get install cmake -y
 RUN git clone --single-branch --branch master https://github.com/golemfactory/yagna.git yagna
 RUN cd yagna && cargo build --release --all
-RUN git clone --single-branch --branch main https://github.com/golemfactory/ya-runtime-http-auth.git ya-runtime-http-auth
+RUN git clone --single-branch --branch scx1332/trying_to_run2 https://github.com/golemfactory/ya-runtime-http-auth.git ya-runtime-http-auth
 RUN cd ya-runtime-http-auth && cargo build --release 
 RUN cd ya-runtime-http-auth && cargo build --release -p ya-http-proxy --bin ya-http-proxy --features="bin"
 RUN apt-get install openssl -y
