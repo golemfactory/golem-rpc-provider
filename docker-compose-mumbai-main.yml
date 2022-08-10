@@ -15,4 +15,4 @@ services:
       - SERVICE_NAME=bor-service
       - SERVICE_DESCRIPTION=Bor\sservice
     network_mode: host
-                                                                                                                       ~                                                                       
+
