@@ -1,9 +1,0 @@
-version: "3.9"
-services:
-  mumbai_provider_1:
-    build: golem_service_provider
-    user: root
-    network_mode: host
-    env_file: 
-      - node_private_conf.env
-

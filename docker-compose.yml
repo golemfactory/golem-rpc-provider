@@ -10,5 +10,5 @@ services:
     build: golem_service_provider
     user: root
     env_file:
-      - node_private_conf.env
+      - node_conf.env
 
