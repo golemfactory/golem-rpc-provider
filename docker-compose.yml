@@ -1,9 +1,14 @@
 version: "3.9"
 services:
   mumbai_provider_1:
+    ports:
+      - "15500:15500"
+      - "15600:15600"
+    environment:
+      - HTTPS_PORT=15600
+      - HTTP_PORT=15500
     build: golem_service_provider
     user: root
-    network_mode: host
-    env_file: 
+    env_file:
       - node_private_conf.env
 
