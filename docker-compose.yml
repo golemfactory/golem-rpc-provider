@@ -9,6 +9,7 @@ services:
       - HTTP_PORT=15501
     build: golem_service_provider
     user: root
+    restart: unless-stopped
     env_file:
       - node_conf_1.env
   mumbai_provider_2:
@@ -20,6 +21,7 @@ services:
       - HTTP_PORT=15502
     build: golem_service_provider
     user: root
+    restart: unless-stopped
     env_file:
       - node_conf_2.env
   mumbai_provider_3:
@@ -31,6 +33,7 @@ services:
       - HTTP_PORT=15503
     build: golem_service_provider
     user: root
+    restart: unless-stopped
     env_file:
       - node_conf_3.env
   mumbai_provider_4:
@@ -42,6 +45,7 @@ services:
       - HTTP_PORT=15504
     build: golem_service_provider
     user: root
+    restart: unless-stopped
     env_file:
       - node_conf_4.env
 
