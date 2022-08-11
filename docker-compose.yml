@@ -2,13 +2,46 @@ version: "3.9"
 services:
   mumbai_provider_1:
     ports:
-      - "15500:15500"
-      - "15600:15600"
+      - "15501:15501"
+      - "15601:15601"
     environment:
-      - HTTPS_PORT=15600
-      - HTTP_PORT=15500
+      - HTTPS_PORT=15601
+      - HTTP_PORT=15501
     build: golem_service_provider
     user: root
     env_file:
-      - node_conf.env
+      - node_conf_1.env
+  mumbai_provider_2:
+    ports:
+      - "15502:15502"
+      - "15602:15602"
+    environment:
+      - HTTPS_PORT=15602
+      - HTTP_PORT=15502
+    build: golem_service_provider
+    user: root
+    env_file:
+      - node_conf_2.env
+  mumbai_provider_3:
+    ports:
+      - "15503:15503"
+      - "15603:15603"
+    environment:
+      - HTTPS_PORT=15603
+      - HTTP_PORT=15503
+    build: golem_service_provider
+    user: root
+    env_file:
+      - node_conf_3.env
+  mumbai_provider_4:
+    ports:
+      - "15504:15504"
+      - "15604:15604"
+    environment:
+      - HTTPS_PORT=15604
+      - HTTP_PORT=15504
+    build: golem_service_provider
+    user: root
+    env_file:
+      - node_conf_4.env
 
