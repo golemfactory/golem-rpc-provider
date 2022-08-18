@@ -1,4 +1,3 @@
-version: "3.9"
 services:
   mumbai_provider_1:
     ports:
