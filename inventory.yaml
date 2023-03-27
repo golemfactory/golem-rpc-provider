@@ -1,0 +1,4 @@
+all:
+  hosts:
+    providers.gateway.golem.network:
+      ansible_user: ubuntu

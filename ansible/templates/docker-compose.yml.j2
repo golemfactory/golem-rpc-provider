@@ -1,0 +1,25 @@
+services:
+  {% for i in providers %}
+  {% set base_port = providers_port_base + (providers_port_step * loop.index) %}
+  {% set https_port = base_port + 1 %}
+
+  provider_{{ loop.index }}:
+    image: golem.network/provider/bor
+    ports:
+      # HTTP
+      - "{{ base_port }}:{{ base_port }}"
+      # HTTPS
+      - "{{ https_port }}:{{ https_port }}"
+    environment:
+      - NODE_NAME={{ i.node_name }}
+      - HTTP_PORT={{ base_port }}
+      - HTTPS_PORT={{ https_port }}
+      - SUBNET={{ i.subnet }}
+      - NETWORK={{ i.network }}
+      - SERVER_NAME={{ i.server_name }}
+      - TARGET_PROXY={{ i.target_proxy }}
+      - MAX_AGREEMENTS=5
+      - SERVICE_NAME=bor-service
+      - SERVICE_DESCRIPTION=BorService
+    restart: unless-stopped
+  {% endfor %}

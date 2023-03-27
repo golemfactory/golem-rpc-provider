@@ -1,0 +1,13 @@
+- name: Build and export docker image locally
+  hosts: localhost
+  vars:
+    image_file_path: ./provider-bor.docker.tar
+  tasks:
+    - name: Build bor provider image
+      command: docker build -t golem.network/provider/bor ../golem_service_provider/
+
+    - name: Export docker image to file
+      command: 'docker save -o {{image_file_path }} golem.network/provider/bor:latest'
+
+    - name: Compress image file
+      command: 'bzip2 --best {{ image_file_path }}'
