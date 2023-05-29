@@ -1,3 +1,4 @@
+version: '2'
 services:
   {% for i in providers %}
   {% set base_port = providers_port_base + (providers_port_step * loop.index) %}
@@ -22,4 +23,5 @@ services:
       - SERVICE_NAME=bor-service
       - SERVICE_DESCRIPTION=BorService
     restart: unless-stopped
+    mem_limit: 800m
   {% endfor %}
