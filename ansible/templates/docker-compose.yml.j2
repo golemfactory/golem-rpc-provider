@@ -22,6 +22,7 @@ services:
       - MAX_AGREEMENTS=5
       - SERVICE_NAME=bor-service
       - SERVICE_DESCRIPTION=BorService
+      - GOERLI_GETH_ADDR=https://rpc.ankr.com/eth_goerli
     restart: unless-stopped
     mem_limit: 400m
   {% endfor %}

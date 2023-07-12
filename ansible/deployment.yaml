@@ -7,15 +7,15 @@
     providers_port_step: 10
     providers:
       # Mumbai
-      - {subnet: 'mumbai_proxy_subnet', network: 'rinkeby', server_name: 'providers.golem.network', target_proxy: 'http://reality64.golem.network:9998',  node_name: 'Mahomet Aneirin'}
-      - {subnet: 'mumbai_proxy_subnet', network: 'rinkeby', server_name: 'providers.golem.network', target_proxy: 'http://reality64.golem.network:9998',  node_name: 'Sukhrab Shib'}
-      - {subnet: 'mumbai_proxy_subnet', network: 'rinkeby', server_name: 'providers.golem.network', target_proxy: 'http://reality64.golem.network:9998',  node_name: 'Samira Ulric'}
-      - {subnet: 'mumbai_proxy_subnet', network: 'rinkeby', server_name: 'providers.golem.network', target_proxy: 'http://reality64.golem.network:9998',  node_name: 'Tomos Blanchard'}
+      - {subnet: 'mumbai_proxy_subnet', network: 'goerli', server_name: 'providers.golem.network', target_proxy: 'http://reality64.golem.network:9998',  node_name: 'Mahomet Aneirin'}
+      - {subnet: 'mumbai_proxy_subnet', network: 'goerli', server_name: 'providers.golem.network', target_proxy: 'http://reality64.golem.network:9998',  node_name: 'Sukhrab Shib'}
+      - {subnet: 'mumbai_proxy_subnet', network: 'goerli', server_name: 'providers.golem.network', target_proxy: 'http://reality64.golem.network:9998',  node_name: 'Samira Ulric'}
+      - {subnet: 'mumbai_proxy_subnet', network: 'goerli', server_name: 'providers.golem.network', target_proxy: 'http://reality64.golem.network:9998',  node_name: 'Tomos Blanchard'}
       # Polygon
-      - {subnet: 'poly_subnet',         network: 'rinkeby', server_name: 'providers.golem.network', target_proxy: 'http://archive.golem.network/polygon', node_name: 'Aishah Hansen'}
-      - {subnet: 'poly_subnet',         network: 'rinkeby', server_name: 'providers.golem.network', target_proxy: 'http://archive.golem.network/polygon', node_name: 'Isobella Mcclain'}
-      - {subnet: 'poly_subnet',         network: 'rinkeby', server_name: 'providers.golem.network', target_proxy: 'http://archive.golem.network/polygon', node_name: 'Abbey Blake'}
-      - {subnet: 'poly_subnet',         network: 'rinkeby', server_name: 'providers.golem.network', target_proxy: 'http://archive.golem.network/polygon', node_name: 'Otto Buchanan'}
+      - {subnet: 'poly_subnet',         network: 'goerli', server_name: 'providers.golem.network', target_proxy: 'http://archive.golem.network/polygon', node_name: 'Aishah Hansen'}
+      - {subnet: 'poly_subnet',         network: 'goerli', server_name: 'providers.golem.network', target_proxy: 'http://archive.golem.network/polygon', node_name: 'Isobella Mcclain'}
+      - {subnet: 'poly_subnet',         network: 'goerli', server_name: 'providers.golem.network', target_proxy: 'http://archive.golem.network/polygon', node_name: 'Abbey Blake'}
+      - {subnet: 'poly_subnet',         network: 'goerli', server_name: 'providers.golem.network', target_proxy: 'http://archive.golem.network/polygon', node_name: 'Otto Buchanan'}
   tasks:
     - name: Install apt dependencies
       apt: 
